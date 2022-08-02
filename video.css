@@ -1,0 +1,37 @@
+.video-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-info {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-photo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px; 
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.video-author,
+.video-stats {
+    font-size: 13px;
+    color: rgb(97, 96, 96);
+    margin-bottom: 5px;
+}
+
+.video-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 18px;
+}
