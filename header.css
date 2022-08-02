@@ -1,0 +1,27 @@
+header img {
+    height: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.left-header,
+.middle-header,
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.channel-picture {
+    height: 32px;
+}
