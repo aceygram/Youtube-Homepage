@@ -1,0 +1,34 @@
+.side-bar {
+    width: 72px;
+    position: fixed;
+    top: 57px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    margin-top: -1px;
+    padding-top: 3px;
+    z-index: 200;
+}
+
+.sidebar-icon {
+    height: 24px;
+}
+
+.box {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.box p {
+    font-size: 10px;
+}
+
+.box:hover {
+    background-color: #eeeded;
+    cursor: pointer;
+}
