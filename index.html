@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="left-header">
-            <img src="images/icons/hamburger-menu.svg" alt="">
+            <img class="hamburger-icon" src="images/icons/hamburger-menu.svg" alt="">
             <img class="youtube-logo" src="images/icons/youtube-logo.svg" alt="">  
         </div>
         
@@ -24,23 +24,84 @@
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img src="images/icons/search.svg" alt="">
+                <div class="tool-tip">Search</div>
             </button>
             <button class="voice-search-button">
                 <img src="images/icons/voice-search-icon.svg" alt="">
+                <div class="tool-tip">Search with your voice</div>
             </button>
         </div>
             
         <div class="right-header">
-            <img src="images/icons/upload.svg" alt="">
-            <img src="images/icons/youtube-apps.svg" alt="">
-            <img src="images/icons/notifications.svg" alt="">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="images/icons/upload.svg" alt="">
+                <div class="tool-tip">Create</div>
+            </div>
+            <div class="youtube-app-container">
+                <img class="youtube-app-icon" src="images/icons/youtube-apps.svg" alt="">
+               <div class="tool-tip">YouTube Apps</div>
+            </div>
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="images/icons/notifications.svg" alt="">
+                <div class="tool-tip">Notifications</div>
+                <p class="notification-number">
+                    3
+                </p>
+            </div>
             <img class="channel-picture" src="images/profile-photos/my-channel.jpeg" alt="">
         </div>
     </header>
 
+    <nav class="side-bar">
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/home.svg" alt="">
+            <p>
+                Home
+            </p>
+        </div>
+
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/explore.svg" alt="">
+            <p>
+                Explore
+            </p>
+        </div>
+
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/subscriptions.svg" alt="">
+            <p>
+                Subscriptions
+            </p>
+        </div>
+
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/originals.svg" alt="">
+            <p>
+                Originals
+            </p>
+        </div>
+
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/youtube-music.svg" alt="">
+            <p>
+                YouTube Music
+            </p>
+        </div>
+
+        <div class="box">
+            <img class="sidebar-icon" src="images/icons/library.svg" alt="">
+            <p>
+                Library
+            </p>
+        </div>
+    </nav>
+
     <div class="video-preview">
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-1.webp" alt="Marques Brownlee">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-1.webp" alt="Marques Brownlee">
+                <p class="time-stamp">14:20</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-1.jpeg" alt="">
                 <div class="video-paragraph">
@@ -57,7 +118,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-2.webp" alt="Markiplier">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-2.webp" alt="Markiplier">
+                <p class="time-stamp">8:22</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-2.jpeg" alt="">
                 <div class="video-paragraph">
@@ -75,7 +139,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-3.webp" alt="SSSniperWolf">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-3.webp" alt="SSSniperWolf">
+                <p class="time-stamp">9:13</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-3.jpeg" alt="">
                 <div class="video-paragraph">
@@ -93,7 +160,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-4.webp" alt="Veritasium">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-4.webp" alt="Veritasium">
+                <p class="time-stamp">22:09</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-4.jpeg" alt="">
                 <div class="video-paragraph">
@@ -111,7 +181,10 @@
         </div>
     
         <div class="video-tile">
-            <img src="images/video-preview/thumbnail-5.webp" alt="CS Dojo">
+            <div class="video-stamp">
+                <img src="images/video-preview/thumbnail-5.webp" alt="CS Dojo">
+                <p class="time-stamp">11:17</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-5.jpeg" alt="">
                 <div class="video-paragraph">
@@ -129,7 +202,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-6.webp" alt="MrBeast">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-6.webp" alt="MrBeast">
+                <p class="time-stamp">19:59</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-6.jpeg" alt="">
                 <div class="video-paragraph">
@@ -147,7 +223,10 @@
         </div>
     
         <div class="video-tile">
-            <img src="images/video-preview/thumbnail-7.webp" alt="RealLifeLore">
+            <div class="video-stamp">
+                <img src="images/video-preview/thumbnail-7.webp" alt="RealLifeLore">
+                <p class="time-stamp">10:13</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-7.jpeg" alt="">
                 <div class="video-paragraph">
@@ -165,7 +244,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-8.webp" alt="Tech Vision">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-8.webp" alt="Tech Vision">
+                <p class="time-stamp">7:12</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-8.jpeg" alt="">
                 <div class="video-paragraph">
@@ -183,7 +265,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-9.webp" alt="ThenX">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-9.webp" alt="ThenX">
+                <p class="time-stamp">13:17</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-9.jpeg" alt="">
                 <div class="video-paragraph">
@@ -201,7 +286,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-10.webp" alt="Business Insider">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-10.webp" alt="Business Insider">
+                <p class="time-stamp">7:53</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-10.jpeg" alt="">
                 <div class="video-paragraph">
@@ -219,7 +307,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-11.webp" alt="Destination Tips">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-11.webp" alt="Destination Tips">
+                <p class="time-stamp">4:10</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-11.jpeg" alt="">
                 <div class="video-paragraph">
@@ -237,7 +328,10 @@
         </div>
     
         <div class="video-tile">
-            <img class="video-thumbnail" src="images/video-preview/thumbnail-12.webp" alt="TED-Ed">
+            <div class="video-stamp">
+                <img class="video-thumbnail" src="images/video-preview/thumbnail-12.webp" alt="TED-Ed">
+                <p class="time-stamp">4:51</p>
+            </div>
             <div class="video-info">
                     <img class="profile-photo" src="images/profile-photos/channel-12.jpeg" alt="">
                 <div class="video-paragraph">
