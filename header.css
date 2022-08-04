@@ -15,14 +15,29 @@ header {
     right: 0;
     bottom: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .left-header,
-.middle-header,
-.right-header {
+.middle-header {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-icon:hover,
+.youtube-logo:hover,
+.upload-icon:hover,
+.youtube-app-icon:hover,
+.notification-icon:hover,
+.channel-picture:hover {
+    cursor: pointer;
 }
 
 .youtube-logo {
@@ -31,6 +46,7 @@ header {
 
 .channel-picture {
     height: 32px;
+    width: 32px;
 }
 
 .left-header {
@@ -78,6 +94,12 @@ input:focus {
     background-color: #f7f7f7;
 }
 
+.search-button:hover,
+.voice-search-button:hover {
+    background-color: #eeeded;
+    cursor: pointer;
+}
+
 .voice-search-button{
     width: 40px;
     height: 40px;
@@ -90,5 +112,75 @@ input:focus {
 
 .right-header {
     flex-shrink: 0;
-    gap: 26px;
+    width: 182px;   
+}
+
+.notification-icon-container,
+.youtube-app-container,
+.upload-icon-container,
+.search-button,
+.voice-search-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.notification-icon-container .notification-number{
+    position:absolute;
+    top: -3px;
+    right: -7px;
+    width: 20px;
+    height: 19px;
+    font-size: 10px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 2px;
+    border: 2px white solid;
+}
+
+.notification-icon-container .notification-number:hover {
+    cursor: pointer;
+}
+
+.upload-icon-container .tool-tip,
+.youtube-app-container .tool-tip,
+.notification-icon-container .tool-tip {
+    position: absolute;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    bottom: -46px;
+    border-radius: 2px;
+    z-index: 1000;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.search-button .tool-tip,
+.voice-search-button .tool-tip {
+    position: absolute;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    /*had to create this new section of code because of difference in bottom*/
+    bottom: -39px;
+    border-radius: 2px;
+    z-index: 1000;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+.search-button:hover .tool-tip,
+.voice-search-button:hover .tool-tip,
+.upload-icon-container:hover .tool-tip,
+.youtube-app-container:hover .tool-tip,
+.notification-icon-container:hover .tool-tip {
+    visibility: visible;
 }
