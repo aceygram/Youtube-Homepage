@@ -184,7 +184,7 @@ input:focus {
     visibility: visible;
 }
 
-@media (max-width: 500px) {
+@media (min-width:0px) and (max-width: 500px) {
     .hamburger-icon {
         display: none;
     }
@@ -220,5 +220,15 @@ input:focus {
 
     .middle-header{
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 388px) {
+    header {
+        padding-left: 10px;
+    }
+
+    .tool-tip {
+        display: none;
     }
 }
