@@ -13,3 +13,8 @@ body {
     position: relative;
     min-height: 200vh;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
