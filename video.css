@@ -118,3 +118,12 @@
         top: 84%;
     }
 }
+
+@media (max-width: 388px) {
+   
+
+    .time-stamp {
+        top: 81%;
+    }
+}
+
