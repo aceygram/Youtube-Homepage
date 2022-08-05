@@ -90,7 +90,6 @@ input:focus {
     width: 65px;
     height: 40px;
     border: 1px solid #cccccc;
-    padding-top: 5px;
     background-color: #f7f7f7;
 }
 
@@ -107,7 +106,6 @@ input:focus {
     border: none;
     margin-left: 8px;
     background-color: #f7f7f7;
-    padding-top: 5px;
 }
 
 .right-header {
@@ -123,6 +121,7 @@ input:focus {
   display: flex;
   justify-content: center;
   position: relative;
+  align-items: center;
 }
 
 .notification-icon-container .notification-number{
@@ -183,4 +182,43 @@ input:focus {
 .youtube-app-container:hover .tool-tip,
 .notification-icon-container:hover .tool-tip {
     visibility: visible;
+}
+
+@media (max-width: 500px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .voice-search-button {
+        display: none;
+    }
+
+    .search-button {
+        border-radius: 50px;
+        width: 42px;
+        padding-top: 2px;
+        background-color: white;
+    }
+
+    .upload-icon-container {
+        display: none;
+    }
+
+    .right-header {
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    header {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .middle-header{
+        margin-left: 20px;
+    }
 }

@@ -32,3 +32,9 @@
     background-color: #eeeded;
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .side-bar {
+        display: none;
+    }
+}
